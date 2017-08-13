@@ -23,11 +23,12 @@ function renderQuestion(){
 	chA=questions[pos][1];
 	chB=questions[pos][2];
 	chC=questions[pos][3];
-	test.innerHTML="<h3>"+question+"</h3>";
-	test.innerHTML+="<h3><input type='radio' name='choices' value='A'> "+chA+"<br>";
-	test.innerHTML+="<h3><input type='radio' name='choices' value='B'> "+chB+"<br>";
-	test.innerHTML+="<h3><input type='radio' name='choices' value='C'> "+chC+"<br><br>";
-	test.innerHTML+="<button class='button'  onclick='checkAnswer()'>SUBMIT ANSWER</button>";
+	
+	test.innerHTML = "<h3>" + question + "</h3>" +
+	"<h3><input type='radio' name='choices' value='A'> " + chA + "<br>" +
+	"<h3><input type='radio' name='choices' value='B'> " + chB + "<br>" +
+	"<h3><input type='radio' name='choices' value='C'> " + chC + "<br><br>" +
+	"<button class='button' onclick='checkAnswer()'>SUBMIT ANSWER</button>";
 }
 function checkAnswer(){
 	choices= document.getElementsByName("choices");
